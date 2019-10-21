@@ -1,17 +1,25 @@
+//Program For Merging Two Integer Arrays Of Size M and N.
 #include <iostream>
 int main()
 {
   int m, n, i = 0, j = 0;
-  cout << "Enter size of both arrays:";
-  cin >> m >> n;
+  //Getting Size Of Array 1
+  cout << "Enter size of 1st array: ";
+  cin >> m;
+  //Getting Size Of Array 2
+  cout << "\nEnter size of 2nd array: ";
+  cin >> n;
   int a[m];
   int b[n];
-  cout << "Enter elements of array 1:";
+  //Getting M Elements Of First Array
+  cout << "Enter elements of array 1:";  
   for (i = 0; i < m; i++)
     cin >> a[i];
+  //Getting N Elements Of Second Array
   cout << "Enter elements of array 2:";
   for (i = 0; i < n; i++)
     cin >> b[i];
+//Now Merging Both arrays..
   i = 0;
   j = 0;
   while ((i < m) && (j < n))
